@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="adding_student.aspx.vb" Inherits="MyWebAppDemo1.WebForm1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="course_adding.aspx.vb" Inherits="MyWebAppDemo1.course_adding" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -50,16 +50,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <h2  style="text-align:center;">Add New Student</h2>
-        <asp:TextBox ID="FirstName" runat="server" placeholder="First Name"></asp:TextBox>
-        <asp:TextBox ID="LastName" runat="server" placeholder="Last Name"></asp:TextBox>
+        <h2  style="text-align:center;">Add New Course</h2>
+        <asp:TextBox ID="FirstName" runat="server" placeholder="Teacher First Name"></asp:TextBox>
+        <asp:TextBox ID="LastName" runat="server" placeholder="Teacher Last Name"></asp:TextBox>
             <br />
-        <asp:TextBox ID="dob" runat="server" placeholder="Date Of Birth"></asp:TextBox>
-        <asp:TextBox ID="gender" runat="server" placeholder="Gender"></asp:TextBox>
-            <br />
-        <asp:TextBox ID="phno" runat="server" placeholder="Contact Number"></asp:TextBox>
-        <asp:TextBox ID="address" runat="server" placeholder="Address"></asp:TextBox>
-
+        <asp:TextBox ID="course_id" runat="server" placeholder="Date Of Birth"></asp:TextBox>
+        <asp:TextBox ID="course_name" runat="server" placeholder="Gender"></asp:TextBox>
+            
         </div>
         <p>
         <asp:Button ID="btnAddStudent" runat="server" Text="Add Student" OnClick="btnAddStudent_Click" />
