@@ -46,8 +46,7 @@
                     <asp:BoundField DataField="CourseID" HeaderText="Course ID" />
                     <asp:BoundField DataField="CourseName" HeaderText="Course Name" />
                     <asp:BoundField DataField="TeacherID" HeaderText="Teacher ID" />
-                    <asp:BoundField DataField="FirstName" HeaderText="Teacher First Name" />
-                    <asp:BoundField DataField="LastName" HeaderText="Teacher Last Name" />
+                    <asp:BoundField DataField="TeacherName" HeaderText="Teacher Name" />
             </Columns>
         </asp:GridView>
         </div>

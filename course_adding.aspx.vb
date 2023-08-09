@@ -17,7 +17,7 @@ Public Class course_adding
         Dim builder As New SqlCommandBuilder(adapter)
         Dim newRow As DataRow = ds.Tables(0).NewRow()
         newRow("CourseName") = course_name.Text
-        newRow("TeacherID") = Teacher_Id.Text
+        newRow(2) = Teacher_Id.Text
         newRow("CourseID") = course_id.Text
         ds.Tables(0).Rows.Add(newRow)
         adapter.Update(ds)

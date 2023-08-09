@@ -42,14 +42,22 @@ Public Class attendance
             Dim studentName As String = row.Cells(1).Text
             Dim courseID As Integer = Convert.ToInt32(row.Cells(2).Text)
             Dim radioButtonList As RadioButtonList = CType(row.FindControl("RadioButtonListAttendance"), RadioButtonList)
-            Dim selectedValue As String = radioButtonList.SelectedValue
-            Dim newRow As DataRow = ds.Tables(0).NewRow()
-            newRow("StudentID") = studentID
-            newRow("StudentName") = studentName
-            newRow("CourseID") = courseID
-            newRow("AttendanceDate") = DateTime.Today
-            newRow("Attedancemark") = selectedValue.ToString()
-            ds.Tables(0).Rows.Add(newRow)
+            If radioButtonList IsNot Nothing Then
+                Dim selectedValue As String = radioButtonList.SelectedValue.Trim()  ' Trim any spaces
+                Dim newRow As DataRow = ds.Tables(0).NewRow()
+                newRow("StudentID") = studentID
+                newRow("StudentName") = studentName
+                newRow("CourseID") = courseID
+                newRow("AttendanceDate") = DateTime.Today
+
+                If String.Equals(selectedValue, "Present", StringComparison.OrdinalIgnoreCase) Then
+                    newRow("Attedancemark") = "Present"
+                Else
+                    newRow("Attedancemark") = "Absent"
+                End If
+
+                ds.Tables(0).Rows.Add(newRow)
+            End If
         Next
         Dim builder As New SqlCommandBuilder(adapter)
         adapter.Update(ds)

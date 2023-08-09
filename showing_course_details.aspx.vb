@@ -9,7 +9,8 @@ Public Class showing_course_details
     End Sub
     Protected Sub BindStudentsGrid()
         Using connection As New SqlConnection(conn)
-            Dim adapter As New SqlDataAdapter("SELECT * FROM Courses", connection)
+            Dim adapter As New SqlDataAdapter("SELECT c.CourseID,c.CourseName,t.TeacherID,concat(t.FirstName, ' ',t.LastName) as TeacherName
+                                FROM Courses as c join Teachers as t on t.TeacherID=c.TeacherID", connection)
             Dim dataSet As New DataSet()
             adapter.Fill(dataSet)
             GridViewStudents.DataSource = dataSet

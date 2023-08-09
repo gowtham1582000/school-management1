@@ -51,7 +51,7 @@
     <form id="form1" runat="server">
         <div>
         <h2  style="text-align:center;">Add New Course</h2>
-                    <asp:TextBox ID="Teacher_Id" runat="server" placeholder="Teacher ID"></asp:TextBox>
+        <asp:TextBox ID="Teacher_Id" runat="server" placeholder="Teacher ID"></asp:TextBox>
           <br />
         <asp:TextBox ID="course_id" runat="server" placeholder="Course Id"></asp:TextBox>
         <asp:TextBox ID="course_name" runat="server" placeholder="Course Name"></asp:TextBox>
