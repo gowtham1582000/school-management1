@@ -9,7 +9,7 @@ Public Class course_adding
 
     End Sub
 
-    Protected Sub btnAddStudent_Click(sender As Object, e As EventArgs) Handles btnAddStudent.Click
+    Protected Sub btnAddCourse_Click(sender As Object, e As EventArgs) Handles btnAddStudent.Click
         Dim conn1 As SqlConnection = New SqlConnection(conn)
         Dim ds As New DataSet()
         Dim adapter As New SqlDataAdapter("SELECT * FROM Courses", conn1)

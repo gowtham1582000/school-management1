@@ -27,7 +27,7 @@
 
         
 
-        #FirstName, #LastName, #dob, #gender, #phno, #address {
+        #FirstName, #LastName, #course_name, #course_id{
             margin: 10px 0;
             padding: 10px;
             width: 70%;
@@ -54,12 +54,11 @@
         <asp:TextBox ID="FirstName" runat="server" placeholder="Teacher First Name"></asp:TextBox>
         <asp:TextBox ID="LastName" runat="server" placeholder="Teacher Last Name"></asp:TextBox>
             <br />
-        <asp:TextBox ID="course_id" runat="server" placeholder="Date Of Birth"></asp:TextBox>
-        <asp:TextBox ID="course_name" runat="server" placeholder="Gender"></asp:TextBox>
-            
+        <asp:TextBox ID="course_id" runat="server" placeholder="Course Id"></asp:TextBox>
+        <asp:TextBox ID="course_name" runat="server" placeholder="Course Name"></asp:TextBox>
         </div>
         <p>
-        <asp:Button ID="btnAddStudent" runat="server" Text="Add Student" OnClick="btnAddStudent_Click" />
+        <asp:Button ID="btnAddStudent" runat="server" Text="Add Student" OnClick="btnAddCourse_Click" />
         </p>
 
     </form>
