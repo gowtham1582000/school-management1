@@ -41,6 +41,15 @@ Partial Public Class WebForm1
     Protected WithEvents LastName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Course_id control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Course_id As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''dob control.
     '''</summary>
     '''<remarks>

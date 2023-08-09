@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class course_adding
+Partial Public Class adding_teacher1
 
     '''<summary>
     '''form1 control.
@@ -23,31 +23,67 @@ Partial Public Class course_adding
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Teacher_Id control.
+    '''Techer_ID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Teacher_Id As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Techer_ID As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''course_id control.
+    '''FirstName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents course_id As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents FirstName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''course_name control.
+    '''LastName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents course_name As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents LastName As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''dob control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents dob As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''gender control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents gender As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''phno control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents phno As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''address control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents address As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''btnAddStudent control.

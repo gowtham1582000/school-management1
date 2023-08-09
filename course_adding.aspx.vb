@@ -15,17 +15,14 @@ Public Class course_adding
         Dim adapter As New SqlDataAdapter("SELECT * FROM Courses", conn1)
         adapter.Fill(ds)
         Dim builder As New SqlCommandBuilder(adapter)
-        Dim newRow As DataRow = ds.Tables(0).NewRow() ' Create a new row
-        newRow(2) = FirstName.Text
-        newRow(3) = LastName.Text
+        Dim newRow As DataRow = ds.Tables(0).NewRow()
         newRow("CourseName") = course_name.Text
+        newRow("TeacherID") = Teacher_Id.Text
         newRow("CourseID") = course_id.Text
         ds.Tables(0).Rows.Add(newRow)
         adapter.Update(ds)
-        FirstName.Text = String.Empty
-        LastName.Text = String.Empty
         course_id.Text = String.Empty
         course_name.Text = String.Empty
-
+        Teacher_Id.Text = String.Empty
     End Sub
 End Class
