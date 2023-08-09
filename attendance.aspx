@@ -7,8 +7,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-           <asp:GridView ID="GridViewAttendance" runat="server" AutoGenerateColumns="False">
+     <asp:GridView ID="GridViewAttendance" runat="server" AutoGenerateColumns="False">
     <Columns>
         <asp:BoundField DataField="StudentID" HeaderText="Student ID" />
         <asp:BoundField DataField="StudentName" HeaderText="Student Name" />
@@ -18,18 +17,17 @@
                 <asp:Label ID="LabelAttendanceDate" runat="server" Text=""></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
-        <asp:TemplateField HeaderText="Attendance Mark">
-            <ItemTemplate>
-                <asp:RadioButtonList ID="RadioButtonListAttendance" runat="server" RepeatDirection="Horizontal">
-                    <asp:ListItem Text="Present" Value="Present" />
-                    <asp:ListItem Text="Absent" Value="Absent" />
-                </asp:RadioButtonList>
-            </ItemTemplate>
-        </asp:TemplateField>
+       <asp:TemplateField HeaderText="Attendance Mark">
+                        <ItemTemplate>
+                            <asp:RadioButtonList ID="RadioButtonListAttendance" runat="server" RepeatDirection="Horizontal">
+                                <asp:ListItem Text="Present" Value="Present" />
+                                <asp:ListItem Text="Absent" Value="Absent" />
+                            </asp:RadioButtonList>
+                        </ItemTemplate>
+                    </asp:TemplateField>
     </Columns>
 </asp:GridView>
 
-        </div>
         <asp:Button ID="Button1" runat="server" Text="Button" />
     </form>
 </body>
