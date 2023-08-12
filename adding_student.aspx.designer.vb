@@ -23,6 +23,15 @@ Partial Public Class WebForm1
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''StudentID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents StudentID As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''FirstName control.
     '''</summary>
     '''<remarks>
@@ -41,15 +50,6 @@ Partial Public Class WebForm1
     Protected WithEvents LastName As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Course_id control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Course_id As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
     '''dob control.
     '''</summary>
     '''<remarks>
@@ -57,6 +57,15 @@ Partial Public Class WebForm1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents dob As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Class1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Class1 As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''gender control.

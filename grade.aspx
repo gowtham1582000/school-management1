@@ -72,13 +72,38 @@
             <br />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
                 <Columns>
+                    
                     <asp:BoundField DataField="StudentID" HeaderText="Student ID" />
-                    <asp:BoundField DataField="studentname" HeaderText="Student Name" />
-                    <asp:BoundField DataField="CourseID" HeaderText="Course ID" />
-                    <asp:BoundField DataField="courseName" HeaderText="Course Name" />
-                    <asp:TemplateField HeaderText="Marks">
+                    <asp:BoundField DataField="StudentName" HeaderText="Student Name" />
+                    <asp:TemplateField HeaderText="Marks Id">
                         <ItemTemplate>
-                            <asp:TextBox ID="txtMarks" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtMarks6" runat="server"></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:BoundField DataField="class" HeaderText="Class" />
+                    <asp:TemplateField HeaderText="Tamil">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtMarks1" runat="server"></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Tcience">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtMarks2" runat="server"></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Maths">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtMarks3" runat="server"></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Social">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtMarks4" runat="server"></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="English">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtMarks5" runat="server"></asp:TextBox>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

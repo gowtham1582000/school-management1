@@ -13,9 +13,7 @@ Public Class attendance
         Using connection As New SqlConnection(conn)
             connection.Open()
 
-            Dim query As String = "SELECT s.StudentID, CONCAT(s.FirstName, ' ', s.LastName) AS StudentName, c.CourseID 
-                          FROM Students s  
-                          JOIN Courses c ON s.course_ID  = c.CourseID"
+            Dim query As String = "SELECT StudentID,concat(FirstName,' ',LastName) as StudentName,class from Students"
             Dim adapter As New SqlDataAdapter(query, connection)
             adapter.Fill(attendanceDataSet)
             GridViewAttendance.DataSource = attendanceDataSet
@@ -40,19 +38,17 @@ Public Class attendance
         For Each row As GridViewRow In GridViewAttendance.Rows
             Dim studentID As Integer = Convert.ToInt32(row.Cells(0).Text)
             Dim studentName As String = row.Cells(1).Text
-            Dim courseID As Integer = Convert.ToInt32(row.Cells(2).Text)
+            Dim courseID As String = row.Cells(2).Text
             Dim newRow As DataRow = ds.Tables(0).NewRow()
             newRow("StudentID") = studentID
             newRow("StudentName") = studentName
-            newRow("CourseID") = courseID
+            newRow("class") = courseID
             newRow("AttendanceDate") = DateTime.Today
             Dim checkBoxAttendancePresent As CheckBox = DirectCast(row.FindControl("CheckBoxAttendancePresent"), CheckBox)
-            Dim isPresent As String = checkBoxAttendancePresent.Text
-            Dim checkBoxAttendanceabsent As CheckBox = DirectCast(row.FindControl("CheckBoxAttendanceAbsent"), CheckBox)
-            Dim isabesent As String = checkBoxAttendanceabsent.Text
-            If isPresent = "Present" Then
+            Dim isPresent As Boolean = checkBoxAttendancePresent.Checked
+            If isPresent Then
                 newRow("Attedancemark") = "Present"
-            Elseif isabesent = "Absent"
+            Else
                 newRow("Attedancemark") = "Absent"
             End If
             ds.Tables(0).Rows.Add(newRow)

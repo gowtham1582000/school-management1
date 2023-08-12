@@ -76,7 +76,7 @@
         <Columns>
             <asp:BoundField DataField="StudentID" HeaderText="Student ID" />
             <asp:BoundField DataField="StudentName" HeaderText="Student Name" />
-            <asp:BoundField DataField="CourseID" HeaderText="Course ID" />
+            <asp:BoundField DataField="class" HeaderText="Class" />
             <asp:TemplateField HeaderText="Attendance Date">
                 <ItemTemplate>
                     <asp:Label ID="LabelAttendanceDate" runat="server" Text=""></asp:Label>

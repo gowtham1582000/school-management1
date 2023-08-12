@@ -27,7 +27,7 @@
 
         
 
-        #FirstName, #LastName, #dob, #gender, #phno, #address,#Course_id {
+        #StudentID,#FirstName, #LastName, #dob, #gender, #phno, #address,#Class1 {
             margin: 10px 0;
             padding: 10px;
             width: 70%;
@@ -51,11 +51,12 @@
     <form id="form1" runat="server">
         <div>
         <h2  style="text-align:center;">Add New Student</h2>
+        <asp:TextBox ID="StudentID" runat="server" placeholder="Student Id"></asp:TextBox>
         <asp:TextBox ID="FirstName" runat="server" placeholder="First Name"></asp:TextBox>
         <asp:TextBox ID="LastName" runat="server" placeholder="Last Name"></asp:TextBox>
             <br />
-             <asp:TextBox ID="Course_id" runat="server" placeholder="Course ID"></asp:TextBox>
         <asp:TextBox ID="dob" runat="server" placeholder="Date Of Birth"></asp:TextBox>
+        <asp:TextBox ID="Class1" runat="server" placeholder="Enter The Class"></asp:TextBox>
         <asp:TextBox ID="gender" runat="server" placeholder="Gender"></asp:TextBox>
             <br />
         <asp:TextBox ID="phno" runat="server" placeholder="Contact Number"></asp:TextBox>

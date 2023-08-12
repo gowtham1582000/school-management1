@@ -15,23 +15,25 @@ Public Class WebForm1
         Dim adapter As New SqlDataAdapter("SELECT * FROM Students", conn1)
         adapter.Fill(ds)
         Dim builder As New SqlCommandBuilder(adapter)
-        Dim newRow As DataRow = ds.Tables(0).NewRow() ' Create a new row
+        Dim newRow As DataRow = ds.Tables(0).NewRow()
+        newRow("StudentID") = StudentID.Text
         newRow("FirstName") = FirstName.Text
         newRow("LastName") = LastName.Text
         newRow("DateOfBirth") = dob.Text
         newRow("Gender") = gender.Text
+        newRow("class") = Class1.Text
         newRow("ContactNumber") = phno.Text
         newRow("Address") = address.Text
-        newRow("course_ID") = Course_id.Text
         ds.Tables(0).Rows.Add(newRow)
         adapter.Update(ds)
+        StudentID.Text = String.Empty
         FirstName.Text = String.Empty
         LastName.Text = String.Empty
         gender.Text = String.Empty
         dob.Text = String.Empty
         phno.Text = String.Empty
         address.Text = String.Empty
-        Course_id.Text = String.Empty
+        Class1.Text = String.Empty
     End Sub
 
 End Class
