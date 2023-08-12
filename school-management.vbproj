@@ -55,6 +55,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -215,6 +216,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="showing_course_details.aspx" />
     <Content Include="showing_student_details.aspx" />
+    <Content Include="student_performance.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -319,6 +321,13 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student_performance.aspx.designer.vb">
+      <DependentUpon>student_performance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student_performance.aspx.vb">
+      <DependentUpon>student_performance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
