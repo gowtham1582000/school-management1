@@ -59,56 +59,47 @@ Partial Public Class student_profile
     Protected WithEvents studentClass As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''studentSection control.
+    '''gender1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents studentSection As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents gender1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''studentRoll control.
+    '''phno control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents studentRoll As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents phno As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''academicYear control.
+    '''dofb control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents academicYear As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents dofb As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''studentGender control.
+    '''Email1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents studentGender As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Email1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''studentReligion control.
+    '''Address1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents studentReligion As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''studentBlood control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents studentBlood As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Address1 As Global.System.Web.UI.WebControls.Label
 End Class

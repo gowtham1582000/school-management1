@@ -216,6 +216,7 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="showing_course_details.aspx" />
     <Content Include="showing_student_details.aspx" />
+    <Content Include="student_attendance_chart.aspx" />
     <Content Include="student_performance.aspx" />
     <Content Include="student_profile.aspx" />
     <Content Include="student_teacher_login.aspx" />
@@ -323,6 +324,13 @@
     <Compile Include="Site.Master.vb">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student_attendance_chart.aspx.designer.vb">
+      <DependentUpon>student_attendance_chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student_attendance_chart.aspx.vb">
+      <DependentUpon>student_attendance_chart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="student_performance.aspx.designer.vb">
       <DependentUpon>student_performance.aspx</DependentUpon>

@@ -153,9 +153,6 @@
                         color: #fff;
                     }
 
-
-
-
         .ScriptHeader {
             float: left;
             width: 100%;
@@ -454,7 +451,7 @@
                                                     <div class="card-body">
                                                         <p class="mb-0"><strong class="pr-1">Student ID:</strong><asp:Label ID="studentID" runat="server"></asp:Label></p>
                                                         <p class="mb-0"><strong class="pr-1">Class:</strong><asp:Label ID="studentClass" runat="server"></asp:Label></p>
-                                                        <p class="mb-0"><strong class="pr-1">Section:</strong><asp:Label ID="studentSection" runat="server"></asp:Label></p>
+                                                        <p class="mb-0"><strong class="pr-1">Gender:</strong><asp:Label ID="gender1" runat="server"></asp:Label></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -465,35 +462,30 @@
                                                     </div>
                                                     <div class="card-body pt-0">
                                                         <table class="table table-bordered">
+                                                            
                                                             <tr>
-                                                                <th width="30%">Roll</th>
+                                                                <th width="30%">Phone Number</th>
                                                                 <td width="2%">:</td>
                                                                 <td>
-                                                                    <asp:Label ID="studentRoll" runat="server"></asp:Label></td>
+                                                                    <asp:Label ID="phno" runat="server"></asp:Label></td>
                                                             </tr>
                                                             <tr>
-                                                                <th width="30%">Academic Year</th>
+                                                                <th width="30%">Date Of Birth</th>
                                                                 <td width="2%">:</td>
                                                                 <td>
-                                                                    <asp:Label ID="academicYear" runat="server"></asp:Label></td>
+                                                                    <asp:Label ID="dofb" runat="server"></asp:Label></td>
                                                             </tr>
                                                             <tr>
-                                                                <th width="30%">Gender</th>
+                                                                <th width="30%">Email</th>
                                                                 <td width="2%">:</td>
                                                                 <td>
-                                                                    <asp:Label ID="studentGender" runat="server"></asp:Label></td>
+                                                                    <asp:Label ID="Email1" runat="server"></asp:Label></td>
                                                             </tr>
                                                             <tr>
-                                                                <th width="30%">Religion</th>
+                                                                <th width="30%">Address</th>
                                                                 <td width="2%">:</td>
                                                                 <td>
-                                                                    <asp:Label ID="studentReligion" runat="server"></asp:Label></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th width="30%">Blood</th>
-                                                                <td width="2%">:</td>
-                                                                <td>
-                                                                    <asp:Label ID="studentBlood" runat="server"></asp:Label></td>
+                                                                    <asp:Label ID="Address1" runat="server"></asp:Label></td>
                                                             </tr>
                                                         </table>
                                                     </div>
@@ -502,7 +494,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
                 </section>
