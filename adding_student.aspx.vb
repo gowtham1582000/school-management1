@@ -38,6 +38,7 @@ Public Class WebForm1
         Class1.Text = String.Empty
         Password.Text = String.Empty
         Email.Text = String.Empty
+        Response.Redirect("student_teacher_login.aspx")
     End Sub
 
 End Class

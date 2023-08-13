@@ -11,7 +11,6 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-
         #form1 {
             max-width: 800px;
             margin: 20px auto;
@@ -20,13 +19,9 @@
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
-
         h1, h2 {
             color: #333;
         }
-
-        
-
         #StudentID,#FirstName, #LastName, #dob, #gender, #phno, #address,#Class1,#Email,#Password {
             margin: 10px 0;
             padding: 10px;
