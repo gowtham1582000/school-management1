@@ -217,6 +217,8 @@
     <Content Include="showing_course_details.aspx" />
     <Content Include="showing_student_details.aspx" />
     <Content Include="student_performance.aspx" />
+    <Content Include="student_profile.aspx" />
+    <Content Include="student_teacher_login.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
   </ItemGroup>
@@ -327,6 +329,20 @@
     </Compile>
     <Compile Include="student_performance.aspx.vb">
       <DependentUpon>student_performance.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="student_profile.aspx.designer.vb">
+      <DependentUpon>student_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student_profile.aspx.vb">
+      <DependentUpon>student_profile.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="student_teacher_login.aspx.designer.vb">
+      <DependentUpon>student_teacher_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student_teacher_login.aspx.vb">
+      <DependentUpon>student_teacher_login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.vb">

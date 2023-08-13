@@ -46,7 +46,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        <h2  style="text-align:center;">Add New Student</h2>
+        <h2  style="text-align:center;">Register The Teacher Details</h2>
         <asp:TextBox ID="Techer_ID" runat="server" placeholder="Teacher ID"></asp:TextBox>
         <asp:TextBox ID="FirstName" runat="server" placeholder="Teacher First Name"></asp:TextBox>
         <asp:TextBox ID="LastName" runat="server" placeholder="Teacher Last Name"></asp:TextBox>

@@ -23,6 +23,8 @@ Public Class WebForm1
         newRow("Gender") = gender.Text
         newRow("class") = Class1.Text
         newRow("ContactNumber") = phno.Text
+        newRow("email") = Email.Text
+        newRow("password") = Password.Text
         newRow("Address") = address.Text
         ds.Tables(0).Rows.Add(newRow)
         adapter.Update(ds)
@@ -34,6 +36,8 @@ Public Class WebForm1
         phno.Text = String.Empty
         address.Text = String.Empty
         Class1.Text = String.Empty
+        Password.Text = String.Empty
+        Email.Text = String.Empty
     End Sub
 
 End Class
